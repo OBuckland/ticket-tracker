@@ -1,8 +1,8 @@
 const team = [
     {
-      id: 1,
-      name: "Alima Miller",
-      role: "Junior Software Developer"
+      "id": 1,
+      "name": "Alima Miller",
+      "role": "Junior Software Developer"
     },
     {
       id: 2,
