@@ -1,8 +1,47 @@
+import React from 'react';
+
 import styles from './App.module.scss';
+// import Counter from './components/Counter';
+// import EmployeeDetails from './components/EmployeeDetails';
+import EmployeeCard from './components/EmployeeCard';
+import team from "./data/team";
+
 
 const App = () => {
+
+  const getEmployeeCard = (team) => (
+    <div className={styles.card} key={team.id}> 
+    <EmployeeCard team={team}/>
+    </div>
+  )
+
   return (
-    <p className={styles.para}>App works...</p>
+<>
+    <div>
+    {team.map(getEmployeeCard)}
+    </div>
+
+    {/* <div>
+      <EmployeeDetails />
+    </div> 
+
+    <div>
+      <Counter />
+    </div> */}
+    </>
+    // <section className='card'>
+    //       <div className='employee deets'>
+    //           <p>name</p>
+    //           <p>role</p>
+    //       </div>
+    //       <div className='counter-tracker'>
+    //           <p>Counter</p>
+    //           <p>Number of tickets</p>
+    //           <p>-</p>
+    //           <p>+</p>
+    //       </div>
+    // </section>
+
   );
 }
 
