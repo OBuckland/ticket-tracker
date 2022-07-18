@@ -17,9 +17,13 @@ const App = () => {
 
   return (
 <>
-    <div>
+<section className={styles.mainContainer}>
+    <h1 className={styles.heading}>Ticket Tracker</h1>
+    <div className={styles.cardContainer}>
     {team.map(getEmployeeCard)}
     </div>
+
+</section>
 
     {/* <div>
       <EmployeeDetails />
