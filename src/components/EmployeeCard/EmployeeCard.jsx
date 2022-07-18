@@ -5,6 +5,9 @@ import Counter from "../Counter";
 import team from "../../data/team";
 
 const EmployeeCard = (props) => {
+
+    const {team} = props;
+
     return (
         <div className={styles.card}>
             <h4 >Employee Card</h4>
