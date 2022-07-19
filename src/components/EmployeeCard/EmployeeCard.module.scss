@@ -1,15 +1,22 @@
 .card {
     border: solid;
     width: 200px;
-    height: 400px;
-    padding: 20px 10px;
+    height: 350px;
+    padding: 10px 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
-    &__.counterContainer {
-        display: flex;
-        border: green solid;
-        justify-content: center;
-    }
+    align-items: center;
+    background-color: rgb(245, 171, 185);
 }
 
+
+.counterContainer {
+    // display: flex;
+    // align-items: flex-end;
+}
+
+.employeeDetails {
+    // display: flex;
+
+}
