@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./EmployeeDetails.module.scss"
 
 const EmployeeDetails = (props) => {
     const {
@@ -6,9 +7,9 @@ const EmployeeDetails = (props) => {
         role
     } = props.team;
     return (
-        <div>
-           <h4>Name {name}</h4>
-           <h4>{role} </h4>
+        <div className={styles.text}>
+           <h4>Name: {name}</h4>
+           <h4>Role: {role} </h4>
         </div>
     )
 }
