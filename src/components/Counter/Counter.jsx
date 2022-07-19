@@ -8,9 +8,11 @@ const Counter = () => {
     return (
         <section className={styles.counter}>
         <h1>Counter</h1>
-        <button className={styles.button} onClick={() => setCount(count - 1)}>-</button>
         <p>{count}</p>
-        <button className={styles.button}  onClick={() => setCount(count + 1)}>+</button>
+        <div className={styles.buttons}>
+            <button className={styles.button} onClick={() => setCount(count - 1)}>-</button>
+            <button className={styles.button}  onClick={() => setCount(count + 1)}>+</button>
+        </div>
         </section>
     )
 }
